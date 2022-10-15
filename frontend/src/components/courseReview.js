@@ -1,15 +1,17 @@
-// const CourseReview = ({ review }) => {
-//     return (
-//       <div className="course-review">
-//         <h1 className="course-code">{course.courseCode}</h1>
-//         <h2>{course.courseTitle}</h2>        
-//         <p>{course.au} <strong>AUs</strong></p>
-//         <hr class="solid"></hr>
-//         <p><strong>Prerequisites: </strong>{course.prerequisites}</p>
-//         <p>{course.description}</p>
-//         {/* need a button here to see the indexes, maybe go new page? */}
-//       </div>
-//     )
-//   }
+const CourseReview = ({ comment }) => {
+    return (
+        <div className="indiv-review row">
+            <h5 className="comment-user">{comment.user_id}</h5>
+            <div className="col-9 row">
+                <div className="col-9">
+                    <p>{comment.comments}</p>
+                </div>
+                <div className="col-3">
+                    <p className="user-rating">4.5</p>
+                </div>
+            </div>
+        </div>
+    )
+  }
   
-//   export default CourseReview
+  export default CourseReview

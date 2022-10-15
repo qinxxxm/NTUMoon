@@ -1,0 +1,69 @@
+/* course review page */
+.course-descript {
+  display: flex;
+  flex-direction: row;
+}
+
+.review-form {
+  padding: 0 10%;
+  margin-bottom: 3%;
+}
+
+.review {
+  padding: 0 10%;
+}
+
+.mod-rating {
+  padding: 0 10%;
+}
+
+.course-detail {
+  padding: 0 10%;
+}
+
+.course-code {
+  color: #1F1D80;
+}
+  
+.course-code:hover {
+  color: #1511f1;
+}
+
+.solid {
+  border-top: 3px solid #bbb;
+}
+
+.add-to-tt {
+  width : 100%;
+  border-radius: 5pt;
+}
+
+.add-to-tt:hover {
+  border-width: 2pt;
+  border-color: #1511f1;
+  color: #1511f1;
+}
+
+.mod-reviews {
+  font-family: 'Poppins';
+}
+
+.add-comment-field {
+  border-radius: 10pt 0pt 0pt 10pt;
+}
+
+.add-rating-field {
+  border-radius: 0pt 10pt 10pt 0pt;
+}
+
+.indiv-review {
+  margin-bottom: 2%;
+}
+
+.comment-user {
+  color:#1F1D80;
+}
+
+.user-rating {
+  text-align: center;
+}

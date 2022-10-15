@@ -1,11 +1,15 @@
+import { Link } from "react-router-dom"
+
 const CourseList = ({ course }) => {
   return (
     <div className="container-md">
       <div className="row">
-        <h1 className="course-code">{course.courseCode}</h1>
-          <h2>{course.courseTitle}</h2>        
-          <p>{course.au} AUs</p>    
-          <hr class="solid"></hr>
+        <Link style={{ textDecoration: 'none'}} to={`/review/${course.courseCode}`} >
+          <h1 className="course-code">{course.courseCode}</h1>
+        </Link>
+        <h2>{course.courseTitle}</h2>        
+        <p>{course.au} AUs</p>    
+        <hr class="solid"></hr>
       </div>
       <div className="row">
         <div className="col-9">

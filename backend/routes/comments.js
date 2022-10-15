@@ -16,7 +16,7 @@ const router = express.Router()
 router.use(requireAuth)
 
 //GET all courses
-router.get('/', getAllComments)
+router.post('/', getAllComments)
 router.post('/addComment', addComment)
 router.post('/deleteComment', deleteComment)
 router.post('/editComment', editComment)

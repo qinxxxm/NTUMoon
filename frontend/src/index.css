@@ -13,11 +13,14 @@ body {
 }
 header {
   background: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 header .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,11 +30,12 @@ header a {
   color: #333;
   text-decoration: none;
 }
-/* .pages{
-  max-width: 1400px;
+.pages{
+  /* max-width: 1400px;
   padding: 20px;
-  margin: 0 auto;
-} */
+  margin: 0 auto; */
+  margin-top: 60px;
+}
 /* for NTUMoon and Logo alignment */
 header .container h1 {
   display: flex;
@@ -43,11 +47,17 @@ header .container h1 div {
 }
 
 /* homepage */
-/* .home {
-  display: grid;
+.home {
+  /* display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 100px;
-} */
+  gap: 100px; */
+  display: flex;
+  flex-direction: row;
+}
+
+.course-detail {
+  padding: 0 10%;
+}
 
 /* login/logout form */
 label, input {
@@ -139,41 +149,6 @@ form.signup, form.login {
   color: #1F1D80;
 }
 
-.solid {
-  border-top: 3px solid #bbb;
-}
-
-.add-to-tt {
-  width : 100%;
-  border-radius: 5pt;
-}
-
-.add-to-tt:hover {
-  border-width: 2pt;
-  border-color: #1511f1;
+.course-code:hover {
   color: #1511f1;
-}
-
-.mod-reviews {
-  font-family: 'Poppins';
-}
-
-.add-comment-field {
-  border-radius: 10pt 0pt 0pt 10pt;
-}
-
-.add-rating-field {
-  border-radius: 0pt 10pt 10pt 0pt;
-}
-
-.indiv-review {
-  margin-bottom: 2%;
-}
-
-.comment-user {
-  color:#1F1D80;
-}
-
-.user-rating {
-  text-align: center;
 }

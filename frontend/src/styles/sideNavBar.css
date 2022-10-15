@@ -1,5 +1,5 @@
 .nav-cont{
-    /* position: absolute; */
+    position: sticky;
     width: 200px;
     top:0;
     height: 100vh;
