@@ -13,7 +13,7 @@ class Calendar extends Component {
       heightSpec: "BusinessHoursNoScroll",
       durationBarVisible: false,
       onEventClick: async (args) => {
-        console.log(args.e.text())
+        this.props.timetableCallBack(args.e.text())
       },
     }
   }

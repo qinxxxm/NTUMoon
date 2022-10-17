@@ -7,6 +7,7 @@ const Timetable = () => {
   const { user } = useAuthContext()
   const [courses, setCourses] = useState(null)
   const [events, setEvents] = useState("")
+  const [idEvent , setId] = useState("")
   var totalAu = 0
   const backColor = [
     "#f37021",
@@ -197,6 +198,11 @@ const Timetable = () => {
         }
       })
   }
+  const callbackHandler = (data) =>{
+    setId(data)
+    console.log(idEvent)
+  }
+
 
   return (
     <div className="timetable">
@@ -206,9 +212,7 @@ const Timetable = () => {
           {events && (
             <Calendar
               events={events}
-              onEventClick={(args) => {
-                console.log(args.e.text())
-              }}
+              timetableCallBack = {callbackHandler}
             ></Calendar>
           )}
         </div>
