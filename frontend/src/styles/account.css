@@ -5,6 +5,7 @@
     flex-direction: row;
 }
 
+
 .content-cont {
     text-align: center;
     display: flex;
@@ -12,6 +13,7 @@
     align-items: center;
     margin-top: 3rem;
     width: 100%;
+    margin-left: 150px;
 }
 
 .coresRemain-cont {
